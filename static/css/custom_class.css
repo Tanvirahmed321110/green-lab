@@ -257,12 +257,12 @@ h3 {
 }
 
 h4 {
-    font-size: var(--fs-lg);
+    font-size: clamp(16px, 1.05vw, 18px);
     line-height: var(--line-height-lg);
 }
 
 h5 {
-    font-size: var(--fs-md);
+    font-size: clamp(14px, 1.05vw, 16px);
     line-height: var(--line-height-md);
 }
 
@@ -334,7 +334,7 @@ select {
 
 .my-input-control input,
 input::placeholder {
-    font-size: var(--fs-sm) !important;
+    font-size: clamp(12px, 1.05vw, 14px);
 }
 
 input:focus,
@@ -405,8 +405,8 @@ tr {
     padding: 0px 12px;
     margin: 0px auto;
     /* width: 83.33%; */
-    width: 100%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 1380px;
 }
 
 .my-container-cart {
@@ -7046,6 +7046,8 @@ tr {
     .my-container,
     .my-container-sm {
         /* max-width: 680px; */
+        width: 100%;
+        padding: 0 4%;
     }
 
     .my-flex-md-column {
