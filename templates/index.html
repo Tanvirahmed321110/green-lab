@@ -914,11 +914,6 @@
                                                             <h4 class=" my-pb-4 my-text-primary">Orders Lines</h4>
 
                                                             <div class="my-d-flex my-gap-8 my-mt-2">
-                                                                <!-- for sl no -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="SL No">
-                                                                </div>
-
                                                                 <!-- product category -->
                                                                 <div class="item">
                                                                     <select name="" id="" required>
@@ -940,24 +935,16 @@
                                                                     </select>
                                                                 </div>
 
-                                                                <!-- for madicine code -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="Madicine Code">
-                                                                </div>
 
-                                                                <!-- UOM  -->
-                                                                <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>UoM </option>
-                                                                        <option value="">item 1</option>
-                                                                        <option value="">item 2</option>
-                                                                        <option value="">item 3</option>
-                                                                    </select>
-                                                                </div>
 
                                                                 <!-- for Quantity -->
                                                                 <div class="item">
-                                                                    <input type="text" placeholder="Quantity">
+                                                                    <input type="number" placeholder="Quantity">
+                                                                </div>
+
+                                                                <div class="add">
+                                                                    <button class="my-btn my-primary-btn"><span
+                                                                            class="btn-content">Add+</span></button>
                                                                 </div>
                                                             </div>
 
@@ -966,39 +953,59 @@
                                                                 <table class="table my-w-100-p">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>SL No</th>
                                                                             <th>Category</th>
                                                                             <th>Product</th>
                                                                             <th>Madicine Code</th>
                                                                             <th>UOM </th>
                                                                             <th>Quantity</th>
+                                                                            <th>Unit Price</th>
+                                                                            <th>Sub Total</th>
+                                                                            <th></th>
                                                                         </tr>
                                                                     </thead>
 
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td>#01</td>
                                                                             <td>Category 1</td>
                                                                             <td>Napa +</td>
                                                                             <td>125444SB</td>
-                                                                            <td>nai vai</td>
+                                                                            <td>-</td>
                                                                             <td>3</td>
+                                                                            <td>120</td>
+                                                                            <td>360</td>
+                                                                            <td>
+                                                                                <button class="danger-btn my-text-red">
+                                                                                    <i class="ri-delete-bin-line"></i>
+                                                                                </button>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>#02</td>
-                                                                            <td>Category 1</td>
+                                                                            <td>Category 2</td>
                                                                             <td>Napa +</td>
                                                                             <td>125444SB</td>
                                                                             <td>-</td>
-                                                                            <td>1</td>
+                                                                            <td>3</td>
+                                                                            <td>120</td>
+                                                                            <td>360</td>
+                                                                            <td>
+                                                                                <button class="danger-btn my-text-red">
+                                                                                    <i class="ri-delete-bin-line"></i>
+                                                                                </button>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>#03</td>
-                                                                            <td>Category 1</td>
+                                                                            <td>Category 3</td>
                                                                             <td>Napa +</td>
                                                                             <td>125444SB</td>
                                                                             <td>-</td>
-                                                                            <td>2</td>
+                                                                            <td>3</td>
+                                                                            <td>120</td>
+                                                                            <td>360</td>
+                                                                            <td>
+                                                                                <button class="danger-btn my-text-red">
+                                                                                    <i class="ri-delete-bin-line"></i>
+                                                                                </button>
+                                                                            </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -1057,38 +1064,42 @@
                                                 <!-- Grid and List View Button -->
                                                 <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                    <!-- grid view button -->
-                                                    <button class="list-grid-btn tooltip">
-                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M4 6H20" stroke="currentColor" stroke-width="2"
-                                                                stroke-linecap="round" />
-                                                            <path d="M4 12H20" stroke="currentColor" stroke-width="2"
-                                                                stroke-linecap="round" />
-                                                            <path d="M4 18H20" stroke="currentColor" stroke-width="2"
-                                                                stroke-linecap="round" />
-                                                        </svg>
+                                                    <!-- Grid and List View Button -->
+                                                    <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                        <!-- Tooltip Text -->
-                                                        <span class="tooltip-text">List View</span>
-                                                    </button>
+                                                        <!-- grid view button -->
+                                                        <button class="list-grid-btn list-btn tooltip">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4 6H20" stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" />
+                                                                <path d="M4 12H20" stroke="currentColor"
+                                                                    stroke-width="2" stroke-linecap="round" />
+                                                                <path d="M4 18H20" stroke="currentColor"
+                                                                    stroke-width="2" stroke-linecap="round" />
+                                                            </svg>
 
-                                                    <!-- list view button -->
-                                                    <button class="list-grid-btn active tooltip">
-                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <rect x="3" y="3" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                            <rect x="13" y="3" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                            <rect x="3" y="13" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                            <rect x="13" y="13" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                        <!-- tooltipo text -->
-                                                        <span class="tooltip-text">Grid View</span>
-                                                    </button>
+                                                            <!-- Tooltip Text -->
+                                                            <span class="tooltip-text">List View</span>
+                                                        </button>
+
+                                                        <!-- list view button -->
+                                                        <button class="list-grid-btn active grid-btn tooltip">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="3" y="3" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                                <rect x="13" y="3" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                                <rect x="3" y="13" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                                <rect x="13" y="13" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                            <!-- tooltipo text -->
+                                                            <span class="tooltip-text">Grid View</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
 
                                                 <button class="my-btn my-primary-btn create-btn">
@@ -1098,305 +1109,576 @@
                                         </div>
 
 
-                                        <table class="my-mt-16 my-w-100-p table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Order Number</th>
-                                                    <th>Order Date</th>
-                                                    <th>Delivery Date</th>
-                                                    <th>Total Amount</th>
-                                                    <th> Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
 
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
+                                        <!--======================= For List View ||============================-->
+                                        <div class="table-wrap list-view-content view">
+                                            <table class="my-mt-16 my-w-100-p table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Order Number</th>
+                                                        <th>Customer Name</th>
+                                                        <th>Order Date</th>
+                                                        <th>Total Amount</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
 
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <!-- Customer Name -->
+                                                        <td>
+                                                            Tanvir Ahmed
+                                                        </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            2 Jan 2026
+                                                        </td>
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
-
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="quatation status">quatation</div>
-                                                    </td>
-
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
-
-                                                            <span class="tooltip-text">View More Information</span>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="asm-dsm status">ASM/DSM</div>
-                                                    </td>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
+                                                        <!-- Customer Name -->
+                                                        <td>
+                                                            Tanvir Ahmed
+                                                        </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            2 Jan 2026
+                                                        </td>
 
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="manager status">Manager</div>
-                                                    </td>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
+                                                        <!-- Customer Name -->
+                                                        <td>
+                                                            Tanvir Ahmed
+                                                        </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            2 Jan 2026
+                                                        </td>
 
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="account status">Account</div>
-                                                    </td>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
+                                                        <!-- Customer Name -->
+                                                        <td>
+                                                            Tanvir Ahmed
+                                                        </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            2 Jan 2026
+                                                        </td>
 
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="sale-order status">sale order</div>
-                                                    </td>
-
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
-
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
-
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="asm-dsm status">ASM/DSM</div>
-                                                    </td>
-
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
-
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
 
 
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!--======================= For Grid View ||============================-->
+                                        <div class="view grid-view-content active">
+                                            <div
+                                                class="cards my-grid-4 my-gap-12 my-mt-16 my-grid-md-3 my-grid-sm-2 my-grid-xs-1 my-gap-sm-8">
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #05660</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#05660</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <!--======================||  Create New Modal Here  ||======================-->
                                         <div class="modal">
@@ -1426,25 +1708,11 @@
 
                                                             <!-- for name -->
                                                             <div class="my-input-control">
-                                                                <label for="">Name</label>
-                                                                <input type="text" class="" placeholder="Name">
+                                                                <label for="">Customer Name</label>
+                                                                <input type="text" class="" placeholder="Customer Name">
                                                                 <small class="error-message">Error Message Here</small>
                                                             </div>
 
-                                                            <!-- for mr code -->
-                                                            <div class="my-input-control">
-                                                                <label for="">MR Code</label>
-                                                                <input type="text" class="" placeholder="MR Code">
-                                                                <small class="error-message">Error Message Here</small>
-                                                            </div>
-
-                                                            <!-- for Target Amount -->
-                                                            <div class="my-input-control">
-                                                                <label for="">Target Amount</label>
-                                                                <input type="number" class=""
-                                                                    placeholder="Target Amount">
-                                                                <small class="error-message">Error Message Here</small>
-                                                            </div>
 
                                                             <!-- for Order Date -->
                                                             <div class="my-input-control">
@@ -1453,13 +1721,6 @@
                                                                 <small class="error-message">Error Message Here</small>
                                                             </div>
 
-                                                            <!-- For Expected Date -->
-                                                            <div class="my-input-control">
-                                                                <label for="">Expected Date</label>
-                                                                <input type="number" class=""
-                                                                    placeholder="Expected Date">
-                                                                <small class="error-message">Error Message Here</small>
-                                                            </div>
 
                                                             <!-- for note -->
                                                             <div class="my-input-control">
@@ -1467,6 +1728,16 @@
                                                                 <input type="text"
                                                                     placeholder="Write your note here...">
                                                             </div>
+
+                                                            <!-- for Sales Person -->
+                                                            <div class="my-input-control">
+                                                                <label for="">Sales Person</label>
+                                                                <input type="number" class=""
+                                                                    placeholder="Sales Person">
+                                                                <small class="error-message">Error Message Here</small>
+                                                            </div>
+
+
                                                         </div>
 
 
@@ -1476,15 +1747,10 @@
                                                             <h4 class=" my-pb-4 my-text-primary">Orders Lines</h4>
 
                                                             <div class="my-d-flex my-gap-8 my-mt-2">
-                                                                <!-- for sl no -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="SL No">
-                                                                </div>
-
                                                                 <!-- product category -->
                                                                 <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>Product
+                                                                    <select name="" id="" required="">
+                                                                        <option value="" disabled="" selected="">Product
                                                                             Category</option>
                                                                         <option value="">item 2</option>
                                                                         <option value="">item 3</option>
@@ -1493,8 +1759,8 @@
 
                                                                 <!-- product category -->
                                                                 <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>Product
+                                                                    <select name="" id="" required="">
+                                                                        <option value="" disabled="" selected="">Product
                                                                         </option>
                                                                         <option value="">item 1</option>
                                                                         <option value="">item 2</option>
@@ -1502,24 +1768,16 @@
                                                                     </select>
                                                                 </div>
 
-                                                                <!-- for madicine code -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="Madicine Code">
-                                                                </div>
 
-                                                                <!-- UOM  -->
-                                                                <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>UoM </option>
-                                                                        <option value="">item 1</option>
-                                                                        <option value="">item 2</option>
-                                                                        <option value="">item 3</option>
-                                                                    </select>
-                                                                </div>
 
                                                                 <!-- for Quantity -->
                                                                 <div class="item">
-                                                                    <input type="text" placeholder="Quantity">
+                                                                    <input type="number" placeholder="Quantity">
+                                                                </div>
+
+                                                                <div class="add">
+                                                                    <button class="my-btn my-primary-btn"><span
+                                                                            class="btn-content">Add+</span></button>
                                                                 </div>
                                                             </div>
 
@@ -1528,39 +1786,31 @@
                                                                 <table class="table my-w-100-p">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th>SL No</th>
                                                                             <th>Category</th>
                                                                             <th>Product</th>
-                                                                            <th>Madicine Code</th>
-                                                                            <th>UOM </th>
+                                                                            <th>Madichine Code</th>
+                                                                            <th>UOM</th>
                                                                             <th>Quantity</th>
+                                                                            <th>Unit Price</th>
+                                                                            <th>Sub Total</th>
+                                                                            <th></th>
                                                                         </tr>
                                                                     </thead>
 
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td>#01</td>
                                                                             <td>Category 1</td>
                                                                             <td>Napa +</td>
                                                                             <td>125444SB</td>
-                                                                            <td>nai vai</td>
+                                                                            <td>-</td>
                                                                             <td>3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>#02</td>
-                                                                            <td>Category 1</td>
-                                                                            <td>Napa +</td>
-                                                                            <td>125444SB</td>
-                                                                            <td>-</td>
-                                                                            <td>1</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>#03</td>
-                                                                            <td>Category 1</td>
-                                                                            <td>Napa +</td>
-                                                                            <td>125444SB</td>
-                                                                            <td>-</td>
-                                                                            <td>2</td>
+                                                                            <td>100</td>
+                                                                            <td>300</td>
+                                                                            <td>
+                                                                                <button class="danger-btn my-text-red">
+                                                                                    <i class="ri-delete-bin-line"></i>
+                                                                                </button>
+                                                                            </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -1619,38 +1869,42 @@
                                                 <!-- Grid and List View Button -->
                                                 <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                    <!-- grid view button -->
-                                                    <button class="list-grid-btn tooltip">
-                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M4 6H20" stroke="currentColor" stroke-width="2"
-                                                                stroke-linecap="round" />
-                                                            <path d="M4 12H20" stroke="currentColor" stroke-width="2"
-                                                                stroke-linecap="round" />
-                                                            <path d="M4 18H20" stroke="currentColor" stroke-width="2"
-                                                                stroke-linecap="round" />
-                                                        </svg>
+                                                    <!-- Grid and List View Button -->
+                                                    <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                        <!-- Tooltip Text -->
-                                                        <span class="tooltip-text">List View</span>
-                                                    </button>
+                                                        <!-- grid view button -->
+                                                        <button class="list-grid-btn list-btn tooltip">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4 6H20" stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" />
+                                                                <path d="M4 12H20" stroke="currentColor"
+                                                                    stroke-width="2" stroke-linecap="round" />
+                                                                <path d="M4 18H20" stroke="currentColor"
+                                                                    stroke-width="2" stroke-linecap="round" />
+                                                            </svg>
 
-                                                    <!-- list view button -->
-                                                    <button class="list-grid-btn active tooltip">
-                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <rect x="3" y="3" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                            <rect x="13" y="3" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                            <rect x="3" y="13" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                            <rect x="13" y="13" width="8" height="8" rx="1"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                        <!-- tooltipo text -->
-                                                        <span class="tooltip-text">Grid View</span>
-                                                    </button>
+                                                            <!-- Tooltip Text -->
+                                                            <span class="tooltip-text">List View</span>
+                                                        </button>
+
+                                                        <!-- list view button -->
+                                                        <button class="list-grid-btn active grid-btn tooltip">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="3" y="3" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                                <rect x="13" y="3" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                                <rect x="3" y="13" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                                <rect x="13" y="13" width="8" height="8" rx="1"
+                                                                    fill="currentColor" />
+                                                            </svg>
+                                                            <!-- tooltipo text -->
+                                                            <span class="tooltip-text">Grid View</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
 
                                                 <button class="my-btn my-primary-btn create-btn">
@@ -1660,305 +1914,575 @@
                                         </div>
 
 
-                                        <table class="my-mt-16 my-w-100-p table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Order Number</th>
-                                                    <th>Order Date</th>
-                                                    <th>Delivery Date</th>
-                                                    <th>Total Amount</th>
-                                                    <th> Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
+                                        <!--======================= For List View ||============================-->
+                                        <div class="table-wrap list-view-content view">
+                                            <table class="my-mt-16 my-w-100-p table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SL Num</th>
+                                                        <th>Customer</th>
+                                                        <th>Date</th>
+                                                        <th>Amount</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
 
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            Tanvir Khan
+                                                        </td>
 
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <!-- Delivery Date -->
+                                                        <td>
+                                                            12 Feb 2026
+                                                        </td>
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="quatation status">quatation</div>
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                            <span class="tooltip-text">View More Information</span>
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            Tanvir Khan
+                                                        </td>
 
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
+                                                        <!-- Delivery Date -->
+                                                        <td>
+                                                            12 Feb 2026
+                                                        </td>
 
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            Tanvir Khan
+                                                        </td>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="asm-dsm status">ASM/DSM</div>
-                                                    </td>
+                                                        <!-- Delivery Date -->
+                                                        <td>
+                                                            12 Feb 2026
+                                                        </td>
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
 
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            Tanvir Khan
+                                                        </td>
 
+                                                        <!-- Delivery Date -->
+                                                        <td>
+                                                            12 Feb 2026
+                                                        </td>
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="manager status">Manager</div>
-                                                    </td>
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
-
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
-
-
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
-
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="account status">Account</div>
-                                                    </td>
-
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
-
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
-
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="sale-order status">sale order</div>
-                                                    </td>
-
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
-
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <!-- single item -->
-                                                <tr>
-                                                    <!-- Order Number -->
-                                                    <td>
-                                                        #4343434
-                                                    </td>
-
-                                                    <!-- Order Date -->
-                                                    <td>
-                                                        2 Jan 2026
-                                                    </td>
-
-                                                    <!-- Delivery Date -->
-                                                    <td>
-                                                        12 Feb 2026
-                                                    </td>
 
 
-                                                    <td class="my-fw-medium">
-                                                        <span>7400</span>&nbsp;৳
-                                                    </td>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-                                                    <!-- Status -->
-                                                    <td>
-                                                        <div class="asm-dsm status">ASM/DSM</div>
-                                                    </td>
+                                        <!--======================= For Grid View ||============================-->
+                                        <div class="view grid-view-content active">
+                                            <div
+                                                class="cards my-grid-4 my-gap-12 my-mt-16 my-grid-md-3 my-grid-sm-2 my-grid-xs-1 my-gap-sm-8">
 
-                                                    <!-- View Button -->
-                                                    <td>
-                                                        <button class="view-btn my-btn my-primary-btn tooltip">
-                                                            <span class="btn-content">
-                                                                <svg width="20" height="20" viewBox="0 0 24 24"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <circle cx="12" cy="12" r="3" stroke="currentColor"
-                                                                        stroke-width="2" />
-                                                                </svg>
-                                                            </span>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #05660</span></div>
+                                                        <ul class="items my-mt-12">
 
-                                                            <div class="tooltip-text">View More Information</div>
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#05660</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
 
-                                            </tbody>
-                                        </table>
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!--===============  single card  ================-->
+                                                <div class="card-wrap">
+                                                    <div class="card">
+                                                        <!-- order number -->
+                                                        <div class="order-num">ORD- <span> #232321</span></div>
+                                                        <ul class="items my-mt-12">
+
+                                                            <!-- order number -->
+                                                            <li class="item">
+                                                                <div class="key">Order Number</div>
+                                                                <div class="value">#232321</div>
+                                                            </li>
+
+                                                            <!-- Customer Name -->
+                                                            <li class="item">
+                                                                <div class="key">Customer Name</div>
+                                                                <div class="value">Md Tanvir Ahmed</div>
+                                                            </li>
+
+                                                            <!-- Region -->
+                                                            <li class="item">
+                                                                <div class="key">Region</div>
+                                                                <div class="value">Dhaka</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Date</div>
+                                                                <div class="value">22 Feb 2026</div>
+                                                            </li>
+
+                                                            <!-- Other -->
+                                                            <li class="item">
+                                                                <div class="key">Other 1</div>
+                                                                <div class="value">other info</div>
+                                                            </li>
+
+                                                            <!-- Date -->
+                                                            <li class="item">
+                                                                <div class="key">Other 2</div>
+                                                                <div class="value">-</div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
 
@@ -1990,40 +2514,26 @@
 
                                                             <!-- for name -->
                                                             <div class="my-input-control">
-                                                                <label for="">Name</label>
-                                                                <input type="text" class="" placeholder="Name">
+                                                                <label for="">Cumtomer Name</label>
+                                                                <input type="text" class="" placeholder="Customer Name">
                                                                 <small class="error-message">Error Message Here</small>
                                                             </div>
 
-                                                            <!-- for mr code -->
-                                                            <div class="my-input-control">
-                                                                <label for="">MR Code</label>
-                                                                <input type="text" class="" placeholder="MR Code">
-                                                                <small class="error-message">Error Message Here</small>
-                                                            </div>
-
-                                                            <!-- for Target Amount -->
-                                                            <div class="my-input-control">
-                                                                <label for="">Target Amount</label>
-                                                                <input type="number" class=""
-                                                                    placeholder="Target Amount">
-                                                                <small class="error-message">Error Message Here</small>
-                                                            </div>
 
                                                             <!-- for Order Date -->
                                                             <div class="my-input-control">
-                                                                <label for="">Order Date</label>
+                                                                <label for=""> Date</label>
                                                                 <input type="number" class="" placeholder="Order Date">
                                                                 <small class="error-message">Error Message Here</small>
                                                             </div>
 
-                                                            <!-- For Expected Date -->
+                                                            <!-- for Amount -->
                                                             <div class="my-input-control">
-                                                                <label for="">Expected Date</label>
-                                                                <input type="number" class=""
-                                                                    placeholder="Expected Date">
+                                                                <label for=""> Amount</label>
+                                                                <input type="number" class="" placeholder="Amount">
                                                                 <small class="error-message">Error Message Here</small>
                                                             </div>
+
 
                                                             <!-- for note -->
                                                             <div class="my-input-control">
@@ -2031,111 +2541,10 @@
                                                                 <input type="text"
                                                                     placeholder="Write your note here...">
                                                             </div>
-                                                        </div>
-
-
-
-                                                        <!-- Order Lines -->
-                                                        <div class="order-lines my-mt-6">
-                                                            <h4 class=" my-pb-4 my-text-primary">Orders Lines</h4>
-
-                                                            <div class="my-d-flex my-gap-8 my-mt-2">
-                                                                <!-- for sl no -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="SL No">
-                                                                </div>
-
-                                                                <!-- product category -->
-                                                                <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>Product
-                                                                            Category</option>
-                                                                        <option value="">item 2</option>
-                                                                        <option value="">item 3</option>
-                                                                    </select>
-                                                                </div>
-
-                                                                <!-- product category -->
-                                                                <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>Product
-                                                                        </option>
-                                                                        <option value="">item 1</option>
-                                                                        <option value="">item 2</option>
-                                                                        <option value="">item 3</option>
-                                                                    </select>
-                                                                </div>
-
-                                                                <!-- for madicine code -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="Madicine Code">
-                                                                </div>
-
-                                                                <!-- UOM  -->
-                                                                <div class="item">
-                                                                    <select name="" id="" required>
-                                                                        <option value="" disabled selected>UoM </option>
-                                                                        <option value="">item 1</option>
-                                                                        <option value="">item 2</option>
-                                                                        <option value="">item 3</option>
-                                                                    </select>
-                                                                </div>
-
-                                                                <!-- for Quantity -->
-                                                                <div class="item">
-                                                                    <input type="text" placeholder="Quantity">
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Order Lines table-->
-                                                            <div class="order-line-table my-mt-12">
-                                                                <table class="table my-w-100-p">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>SL No</th>
-                                                                            <th>Category</th>
-                                                                            <th>Product</th>
-                                                                            <th>Madicine Code</th>
-                                                                            <th>UOM </th>
-                                                                            <th>Quantity</th>
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>#01</td>
-                                                                            <td>Category 1</td>
-                                                                            <td>Napa +</td>
-                                                                            <td>125444SB</td>
-                                                                            <td>nai vai</td>
-                                                                            <td>3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>#02</td>
-                                                                            <td>Category 1</td>
-                                                                            <td>Napa +</td>
-                                                                            <td>125444SB</td>
-                                                                            <td>-</td>
-                                                                            <td>1</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>#03</td>
-                                                                            <td>Category 1</td>
-                                                                            <td>Napa +</td>
-                                                                            <td>125444SB</td>
-                                                                            <td>-</td>
-                                                                            <td>2</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-
-                                                                <!-- Total  -->
-                                                                <div class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-6"
-                                                                    style="border-top:1px solid #777">
-                                                                    <h5 class="my-text-primary">Total</h5>
-                                                                    <h4 class="my-text-primary">1200 <span> ৳</span>
-                                                                    </h4>
-                                                                </div>
+                                                            <!-- for note -->
+                                                            <div class="my-input-control">
+                                                                <label for="">Sales Person</label>
+                                                                <input type="text" placeholder="Sales Person">
                                                             </div>
                                                         </div>
 
@@ -2304,31 +2713,35 @@
 
             const buttons = document.querySelectorAll('.list-grid-btn');
 
-            buttons.forEach(btn => {
-                btn.addEventListener('click', function () {
+            if (buttons) {
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', function () {
 
-                    const parent = this.closest('.tab-content');
+                        const parent = this.closest('.tab-content');
 
-                    const listView = parent.querySelector('.list-view-content');
-                    const gridView = parent.querySelector('.grid-view-content');
+                        if (!parent) { return }
 
-                    // Button active (same group only)
-                    parent.querySelectorAll('.list-grid-btn')
-                        .forEach(b => b.classList.remove('active'));
+                        const listView = parent.querySelector('.list-view-content');
+                        const gridView = parent.querySelector('.grid-view-content');
 
-                    this.classList.add('active');
+                        // Button active (same group only)
+                        parent.querySelectorAll('.list-grid-btn')
+                            .forEach(b => b.classList.remove('active'));
 
-                    // Show / Hide view
-                    if (this.classList.contains('grid-btn')) {
-                        gridView.classList.add('active');
-                        listView.classList.remove('active');
-                    } else {
-                        listView.classList.add('active');
-                        gridView.classList.remove('active');
-                    }
+                        this.classList.add('active');
 
+                        // Show / Hide view
+                        if (this.classList.contains('grid-btn')) {
+                            gridView.classList.add('active');
+                            listView.classList.remove('active');
+                        } else {
+                            listView.classList.add('active');
+                            gridView.classList.remove('active');
+                        }
+
+                    });
                 });
-            });
+            }
 
 
 

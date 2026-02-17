@@ -56,6 +56,11 @@ input.error {
     flex: 1;
 }
 
+.order-lines .add .my-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
 select {
     /* color: var(--my-text-quaternary); */
     width: 100%;
