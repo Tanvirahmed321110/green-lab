@@ -1094,7 +1094,34 @@ footer .company {
 
 
 
-@media (max-width:480px) {
+@media (max-width:555px) {
+    .view .card .item {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        padding: 6px 0;
+        border-bottom: 1px solid var(--my-white-off);
+        /* flex-direction: column; */
+        /* gap: 0; */
+        flex-wrap: wrap;
+    }
+
+    .card-wrap .items {
+        margin-top: 12px;
+    }
+
+    .view .card-wrap {
+        padding: 0px;
+        box-shadow: 4px 20px 40px 4px rgba(0, 20, 45, 0.12),
+            0 0 0 1px rgba(156, 180, 215, 0.2) inset;
+        border-radius: 20px;
+    }
+
+    .view .card-wrap .card {
+        border-radius: 20px;
+        padding: 12px;
+    }
+
     .tab-contents {
         background-color: var(--my-white);
         padding: 16px;
