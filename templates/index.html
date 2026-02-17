@@ -103,7 +103,7 @@
                             <div>
                                 <div class="tab-contents my-mt-16">
 
-                                    <!--==============================|| Sales Order Content ||================================= -->
+                                    <!--=========================================|| Sales Order Content ||============================================= -->
                                     <div class="tab-content active">
 
                                         <!-- tab content header -->
@@ -114,11 +114,11 @@
                                             <div class="my-d-flex my-align-center my-justify-center my-gap-8"
                                                 style="align-items: stretch;">
 
-                                                <!-- Grid and List View Button -->
+                                                <!--============  Grid and List View Button ==========-->
                                                 <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                    <!-- grid view button -->
-                                                    <button class="list-grid-btn list-btn tooltip">
+                                                    <!-- list view button -->
+                                                    <button class="list-grid-btn active list-btn tooltip">
                                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M4 6H20" stroke="currentColor" stroke-width="2"
@@ -133,8 +133,8 @@
                                                         <span class="tooltip-text">List View</span>
                                                     </button>
 
-                                                    <!-- list view button -->
-                                                    <button class="list-grid-btn active grid-btn tooltip">
+                                                    <!-- grid view button -->
+                                                    <button class="list-grid-btn  grid-btn tooltip">
                                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
                                                             <rect x="3" y="3" width="8" height="8" rx="1"
@@ -151,6 +151,8 @@
                                                     </button>
                                                 </div>
 
+
+                                                <!-- create new button -->
                                                 <button class="my-btn my-primary-btn create-btn">
                                                     <span class="btn-content">Create New</span>
                                                 </button>
@@ -158,7 +160,7 @@
                                         </div>
 
                                         <!--======================= For List View ||============================-->
-                                        <div class="table-wrap list-view-content view">
+                                        <div class="table-wrap list-view-content active view">
                                             <table class="my-mt-16 my-w-100-p table">
                                                 <thead>
                                                     <tr>
@@ -461,7 +463,7 @@
                                         </div>
 
                                         <!--======================= For Grid View ||============================-->
-                                        <div class="view grid-view-content active">
+                                        <div class="view grid-view-content ">
                                             <div
                                                 class="cards my-grid-4 my-gap-12 my-mt-16 my-grid-md-3 my-grid-sm-2 my-grid-xs-1 my-gap-sm-8">
 
@@ -836,7 +838,7 @@
                                             </div>
                                         </div>
 
-                                        <!--======================||  Create New Modal Here  ||======================-->
+                                        <!--======================||  Create New Modal For Sales Orders  ||======================-->
                                         <div class="modal">
                                             <form action="#" class="modal-content lg">
 
@@ -1050,7 +1052,12 @@
                                         </div>
                                     </div>
 
-                                    <!--===============================|| Sales Order Content ||============================ -->
+
+
+
+
+
+                                    <!--==============================================|| Sales Order Content ||========================================== -->
                                     <div class="tab-content ">
 
                                         <!-- tab content header -->
@@ -1064,54 +1071,50 @@
                                                 <!-- Grid and List View Button -->
                                                 <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                    <!-- Grid and List View Button -->
-                                                    <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
 
-                                                        <!-- grid view button -->
-                                                        <button class="list-grid-btn list-btn tooltip">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M4 6H20" stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" />
-                                                                <path d="M4 12H20" stroke="currentColor"
-                                                                    stroke-width="2" stroke-linecap="round" />
-                                                                <path d="M4 18H20" stroke="currentColor"
-                                                                    stroke-width="2" stroke-linecap="round" />
-                                                            </svg>
+                                                    <!-- list view button -->
+                                                    <button class="list-grid-btn active list-btn tooltip">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 6H20" stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" />
+                                                            <path d="M4 12H20" stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" />
+                                                            <path d="M4 18H20" stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" />
+                                                        </svg>
 
-                                                            <!-- Tooltip Text -->
-                                                            <span class="tooltip-text">List View</span>
-                                                        </button>
+                                                        <!-- Tooltip Text -->
+                                                        <span class="tooltip-text">List View</span>
+                                                    </button>
 
-                                                        <!-- list view button -->
-                                                        <button class="list-grid-btn active grid-btn tooltip">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <rect x="3" y="3" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                                <rect x="13" y="3" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                                <rect x="3" y="13" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                                <rect x="13" y="13" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                            </svg>
-                                                            <!-- tooltipo text -->
-                                                            <span class="tooltip-text">Grid View</span>
-                                                        </button>
-                                                    </div>
+                                                    <!-- Grid view button -->
+                                                    <button class="list-grid-btn  grid-btn tooltip">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="3" y="3" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                            <rect x="13" y="3" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                            <rect x="3" y="13" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                            <rect x="13" y="13" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                        <!-- tooltipo text -->
+                                                        <span class="tooltip-text">Grid View</span>
+                                                    </button>
                                                 </div>
 
+                                                <!-- create button -->
                                                 <button class="my-btn my-primary-btn create-btn">
                                                     <span class="btn-content">Create New</span>
                                                 </button>
                                             </div>
                                         </div>
 
-
-
                                         <!--======================= For List View ||============================-->
-                                        <div class="table-wrap list-view-content view">
+                                        <div class="table-wrap list-view-content active view">
                                             <table class="my-mt-16 my-w-100-p table">
                                                 <thead>
                                                     <tr>
@@ -1288,6 +1291,88 @@
                                                             </button>
                                                         </td>
                                                     </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
+
+                                                        <!-- Customer Name -->
+                                                        <td>
+                                                            Tanvir Ahmed
+                                                        </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            2 Jan 2026
+                                                        </td>
+
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
+
+
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
+
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- single item -->
+                                                    <tr>
+                                                        <!-- Order Number -->
+                                                        <td>
+                                                            #4343434
+                                                        </td>
+
+                                                        <!-- Customer Name -->
+                                                        <td>
+                                                            Tanvir Ahmed
+                                                        </td>
+                                                        <!-- Order Date -->
+                                                        <td>
+                                                            2 Jan 2026
+                                                        </td>
+
+                                                        <td class="my-fw-medium">
+                                                            <span>7400</span>&nbsp;৳
+                                                        </td>
+
+
+                                                        <!-- View Button -->
+                                                        <td>
+                                                            <button class="view-btn my-btn my-primary-btn tooltip">
+                                                                <span class="btn-content">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <circle cx="12" cy="12" r="3"
+                                                                            stroke="currentColor" stroke-width="2" />
+                                                                    </svg>
+                                                                </span>
+
+                                                                <span class="tooltip-text">View More Information</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
 
 
 
@@ -1297,7 +1382,7 @@
                                         </div>
 
                                         <!--======================= For Grid View ||============================-->
-                                        <div class="view grid-view-content active">
+                                        <div class="view grid-view-content ">
                                             <div
                                                 class="cards my-grid-4 my-gap-12 my-mt-16 my-grid-md-3 my-grid-sm-2 my-grid-xs-1 my-gap-sm-8">
 
@@ -1680,7 +1765,7 @@
                                             </div>
                                         </div>
 
-                                        <!--======================||  Create New Modal Here  ||======================-->
+                                        <!--======================||  Create New Modal For Secondary sales  ||======================-->
                                         <div class="modal">
                                             <form action="#" class="modal-content lg">
 
@@ -1736,7 +1821,6 @@
                                                                     placeholder="Sales Person">
                                                                 <small class="error-message">Error Message Here</small>
                                                             </div>
-
 
                                                         </div>
 
@@ -1815,12 +1899,15 @@
                                                                     </tbody>
                                                                 </table>
 
-                                                                <!-- Total  -->
-                                                                <div class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-6"
-                                                                    style="border-top:1px solid #777">
-                                                                    <h5 class="my-text-primary">Total</h5>
-                                                                    <h4 class="my-text-primary">1200 <span> ৳</span>
-                                                                    </h4>
+                                                                <div class="my-d-flex my-align-center my-gap-8">
+                                                                    <button>Discount</button>
+                                                                    <!-- Total  -->
+                                                                    <div class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-6"
+                                                                        style="border-top:1px solid #777">
+                                                                        <h5 class="my-text-primary">Total</h5>
+                                                                        <h4 class="my-text-primary">1200 <span> ৳</span>
+                                                                        </h4>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1855,7 +1942,11 @@
                                         </div>
                                     </div>
 
-                                    <!--=================================|| Payment Content ||========================== -->
+
+
+
+
+                                    <!--==============================================|| Payment Content ||======================================== -->
                                     <div class="tab-content ">
 
                                         <!-- tab content header -->
@@ -1868,45 +1959,42 @@
 
                                                 <!-- Grid and List View Button -->
                                                 <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
+                                                    <!-- grid view button -->
+                                                    <button class="list-grid-btn active list-btn tooltip">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 6H20" stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" />
+                                                            <path d="M4 12H20" stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" />
+                                                            <path d="M4 18H20" stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" />
+                                                        </svg>
 
-                                                    <!-- Grid and List View Button -->
-                                                    <div class="list-grid my-gap-4 my-d-flex my-justify-center ">
+                                                        <!-- Tooltip Text -->
+                                                        <span class="tooltip-text">List View</span>
+                                                    </button>
 
-                                                        <!-- grid view button -->
-                                                        <button class="list-grid-btn list-btn tooltip">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M4 6H20" stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" />
-                                                                <path d="M4 12H20" stroke="currentColor"
-                                                                    stroke-width="2" stroke-linecap="round" />
-                                                                <path d="M4 18H20" stroke="currentColor"
-                                                                    stroke-width="2" stroke-linecap="round" />
-                                                            </svg>
-
-                                                            <!-- Tooltip Text -->
-                                                            <span class="tooltip-text">List View</span>
-                                                        </button>
-
-                                                        <!-- list view button -->
-                                                        <button class="list-grid-btn active grid-btn tooltip">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <rect x="3" y="3" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                                <rect x="13" y="3" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                                <rect x="3" y="13" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                                <rect x="13" y="13" width="8" height="8" rx="1"
-                                                                    fill="currentColor" />
-                                                            </svg>
-                                                            <!-- tooltipo text -->
-                                                            <span class="tooltip-text">Grid View</span>
-                                                        </button>
-                                                    </div>
+                                                    <!-- list view button -->
+                                                    <button class="list-grid-btn  grid-btn tooltip">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="3" y="3" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                            <rect x="13" y="3" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                            <rect x="3" y="13" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                            <rect x="13" y="13" width="8" height="8" rx="1"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                        <!-- tooltipo text -->
+                                                        <span class="tooltip-text">Grid View</span>
+                                                    </button>
                                                 </div>
 
+
+                                                <!-- create button -->
                                                 <button class="my-btn my-primary-btn create-btn">
                                                     <span class="btn-content">Create New</span>
                                                 </button>
@@ -1915,7 +2003,7 @@
 
 
                                         <!--======================= For List View ||============================-->
-                                        <div class="table-wrap list-view-content view">
+                                        <div class="table-wrap list-view-content active view">
                                             <table class="my-mt-16 my-w-100-p table">
                                                 <thead>
                                                     <tr>
@@ -2092,16 +2180,12 @@
                                                             </button>
                                                         </td>
                                                     </tr>
-
-
-
-
                                                 </tbody>
                                             </table>
                                         </div>
 
                                         <!--======================= For Grid View ||============================-->
-                                        <div class="view grid-view-content active">
+                                        <div class="view grid-view-content ">
                                             <div
                                                 class="cards my-grid-4 my-gap-12 my-mt-16 my-grid-md-3 my-grid-sm-2 my-grid-xs-1 my-gap-sm-8">
 
@@ -2486,7 +2570,7 @@
 
 
 
-                                        <!--======================||  Create New Modal Here  ||======================-->
+                                        <!--======================||  Create New Modal For Payment  ||======================-->
                                         <div class="modal">
                                             <form action="#" class="modal-content lg">
 
@@ -2588,18 +2672,22 @@
 
 
 
+
+
         <!--===========|| For Notification ||=========-->
         <!-- if you will active class add then show it -->
-        <!-- <div class="notification-box active">
+        <div class="notification-box ">
             <div class="content">Done ✔✔ </div>
-        </div> -->
+        </div>
+        <div class="notification-box error ">
+            <div class="content">Sorry 😢 </div>
+        </div>
 
 
 
 
 
 
-        <!--============ Footer here =============-->
 
         <!--============ Footer here =============-->
         <footer>
@@ -2612,11 +2700,6 @@
 
 
 
-
-
-
-
-        <script src="/static/js/main.js"></script>
         <script>
             document.querySelectorAll('.tab-container').forEach(container => {
                 const tabs = container.querySelectorAll('.tab-btn');

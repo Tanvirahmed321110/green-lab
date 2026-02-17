@@ -8,7 +8,8 @@
     margin-bottom: 4px;
     display: inline-block;
     color: var(--my-text-primary);
-    font-size: clamp(13px, 1.05vw, 16px);
+    font-size: clamp(12px, 1.05vw, 14px);
+    font-weight: 500;
 
 }
 
@@ -1134,4 +1135,37 @@ footer .company {
         font-weight: 500;
         font-size: var(--fs-xs);
     }
+}
+
+
+
+
+
+
+
+.notification-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 29;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.notification-box.error {
+    background: var(--my-red);
+}
+
+/* Slide in */
+.notification-box.active {
+    transform: translateX(0);
+    opacity: 1;
 }

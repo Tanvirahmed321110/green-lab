@@ -334,7 +334,7 @@ select {
 
 .my-input-control input,
 input::placeholder {
-    font-size: clamp(12px, 1.05vw, 14px);
+    font-size: clamp(12px, 1.05vw, 14px) !important;
 }
 
 input:focus,
