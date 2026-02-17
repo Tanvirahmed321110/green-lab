@@ -1101,8 +1101,6 @@ footer .company {
         gap: 2px;
         padding: 6px 0;
         border-bottom: 1px solid var(--my-white-off);
-        /* flex-direction: column; */
-        /* gap: 0; */
         flex-wrap: wrap;
     }
 
