@@ -369,6 +369,9 @@ button:active {
     background-color: var(--my-white);
 }
 
+
+
+
 /*=======================||  Table ||======================== */
 .table-wrap {
     overflow-x: auto;
@@ -398,6 +401,110 @@ button:active {
     display: flex;
 }
 
+
+/* view */
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+
+/*==================  view card  ==================*/
+.view .card-wrap {
+    padding: 8px;
+    /* border: 1px solid var(--my-border-color); */
+    background-color: white;
+    box-shadow: 4px 20px 40px 4px rgba(0, 20, 45, 0.12),
+        0 0 0 1px rgba(156, 180, 215, 0.2) inset;
+    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.view .card-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgba(20, 196, 20, 0.213), rgba(0, 128, 0, 0.035));
+    transform: rotate(42deg) translateY(-76px);
+    transition: .3s ease;
+}
+
+.view .card-wrap:hover::after {
+    transform: rotate(42deg) translateY(-96px);
+}
+
+.view .card-wrap:hover {
+    transform: translateY(-8px);
+}
+
+.view .card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--my-border-secondary);
+    border-radius: 24px;
+    padding: 16px;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    color: #13294b;
+    position: relative;
+}
+
+
+.view .card .order-num {
+    padding: 4px 16px;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(to right, #FC5A31, #414651);
+    background: linear-gradient(to right, #5c606a96, #565b66);
+    display: inline-block;
+    width: fit-content;
+    color: var(--my-white);
+    font-size: var(--fs-xs);
+    /* border: 2px solid var(--my-primary-color); */
+    line-height: 1.6;
+}
+
+.view .card .item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--my-white-off);
+}
+
+.view .card .item:last-child {
+    border-bottom: none;
+}
+
+.view .card .item .key {
+    font-weight: 500;
+    font-size: var(--fs-xs);
+    color: var(--my-text-quaternary);
+    text-transform: uppercase;
+}
+
+.view .card .item .value {
+    font-weight: 500;
+    font-size: var(--fs-sm);
+}
+
+.data-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 28px 40px -12px #1e3a5f55,
+        0 0 0 1px #ffffffcc inset;
+    border-color: #ffffff90;
+}
 
 /* view button */
 .view-btn {
@@ -1002,5 +1109,24 @@ footer .company {
     .modal-content.lg .modal-body {
         padding: 16px;
         background-color: #f4f5f6;
+    }
+
+
+
+    /* view card */
+    .view .card .item .order-num {
+        font-size: var(--fs-low);
+    }
+
+    .view .card .item .key {
+        font-weight: 500;
+        font-size: var(--fs-low);
+        color: var(--my-text-quaternary);
+        text-transform: uppercase;
+    }
+
+    .view .card .item .value {
+        font-weight: 500;
+        font-size: var(--fs-xs);
     }
 }
