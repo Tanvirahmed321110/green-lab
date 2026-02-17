@@ -281,29 +281,6 @@ button:active {
     color: var(--my-text-primary);
 }
 
-/* .tab-content .head-title::after {
-    content: '';
-    position: absolute;
-    background-color: var(--my-secondary-color);
-    width: 50px;
-    height: 3px;
-    right: 0;
-    bottom: 0;
-    opacity: .5;
-}
-
-.tab-content .head-title::before {
-    content: '';
-    position: absolute;
-    background-color: var(--my-secondary-color);
-    width: 50px;
-    height: 3px;
-    left: 0;
-    top: 0;
-    opacity: .5;
-    animation: lineGrowLeft 2s infinite ease-in-out;
-} */
-
 
 
 /* Bottom line */
@@ -371,6 +348,50 @@ button:active {
     padding: 12px 16px;
     border-radius: var(--radius-md);
 }
+
+
+
+
+/* =======================  Tab Buttton here ===================== */
+.tab-btns {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: stretch;
+    text-align: center;
+    padding: 16px;
+    border-radius: var(--radius-xl);
+    box-shadow: rgba(100, 100, 111, 0.14) 0px 4px 20px 0px;
+}
+
+.tab-btn {
+    position: relative;
+    overflow: hidden;
+    /* ripple effect inside button */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    /* premium rounded look */
+    background-color: #F0F2F5;
+    background-color: #e8f1fd;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(14px, 1.05vw, 16px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #FC5A31;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(252, 90, 49, 0.3);
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: #E0E4E8;
+}
+
 
 
 
@@ -773,63 +794,6 @@ header .right .user-img img {
 
 
 
-/* =======================  Tab Buttton here ===================== */
-.tab-btns {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    align-items: stretch;
-    text-align: center;
-    padding: 16px;
-    border-radius: var(--radius-xl);
-    box-shadow: rgba(100, 100, 111, 0.14) 0px 4px 20px 0px;
-}
-
-.tab-btn {
-    position: relative;
-    overflow: hidden;
-    /* ripple effect inside button */
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    /* premium rounded look */
-    background-color: #F0F2F5;
-    background-color: #e8f1fd;
-    color: #333;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 1.05vw, 16px);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.tab-btn.active {
-    background-color: #FC5A31;
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(252, 90, 49, 0.3);
-}
-
-.tab-btn:hover:not(.active) {
-    background-color: #E0E4E8;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.pagination {
-    background-color: var(--my-white);
-    border-radius: var(--radius-md);
-    margin-top: 20px;
-}
-
 
 
 
@@ -1001,7 +965,7 @@ footer .company {
 
 
 
-/* info modal */
+/*============== info modal ===============*/
 .info-modal .item {
     background-color: var(--my-white);
     display: flex;
@@ -1025,8 +989,7 @@ footer .company {
 
 
 
-
-/* Example 1: Fade In + Slide Up */
+/*==================== Tooltip Here ===============  */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -1094,7 +1057,42 @@ footer .company {
 
 
 
-@media (max-width:555px) {
+
+
+/*================ Notification Box ================*/
+.notification-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 29;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.notification-box.error {
+    background: var(--my-red);
+}
+
+/* Slide in */
+.notification-box.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+
+/*================== Mobile Design Start Here ===================*/
+@media (max-width:767px) {
     .view .card .item {
         display: flex;
         justify-content: space-between;
@@ -1236,37 +1234,4 @@ footer .company {
     .info-modal .item .value {
         font-size: var(--fs-xs);
     }
-}
-
-
-
-
-
-
-
-.notification-box {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 29;
-    background: linear-gradient(135deg, #22c55e, #16a34a);
-    color: #fff;
-    padding: 14px 20px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 500;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    transform: translateX(120%);
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.notification-box.error {
-    background: var(--my-red);
-}
-
-/* Slide in */
-.notification-box.active {
-    transform: translateX(0);
-    opacity: 1;
 }

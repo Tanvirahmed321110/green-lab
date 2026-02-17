@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const tabs = container.querySelectorAll('.tab-btn');
         const contents = container.querySelectorAll('.tab-content');
 
+        if (tabs.length === 0 || contents.length === 0) return;
+
+
         tabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
                 // Remove active from all buttons
@@ -20,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+
+    // ===================  Tab Contents  =================
     const tabContents = document.querySelectorAll('.tab-content');
 
     if (tabContents) {
@@ -39,10 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('create btton not found')
             }
         });
-
     }
 
 
+
+    // ================ Close MOdal =================
     function closeModal() {
         // select all modals
         const modals = document.querySelectorAll('.modal');
@@ -80,6 +86,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+    // ================== grid and list view  ====================
     const buttons = document.querySelectorAll('.list-grid-btn');
 
     if (buttons) {
@@ -111,6 +119,5 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
-
 
 })
