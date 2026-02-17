@@ -32,6 +32,7 @@ input.error {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 1px 2px;
     border-radius: var(--radius-sm);
+    overflow: auto;
 }
 
 .order-lines input {
@@ -234,6 +235,35 @@ button:active {
     transform: translateX(-50%) scaleX(1);
 }
 
+/* discount-btn */
+
+.discount-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--my-border-primary);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.discount-item {
+    max-width: 264px;
+    justify-content: end;
+    align-items: end;
+    margin-top: 4px;
+}
+
+.my-danger-btn.modal-close-btn {
+    position: unset;
+    width: unset;
+    height: unset;
+}
+
+.my-danger-btn.modal-close-btn:hover {
+    transform: unset;
+}
 
 /*=================== Tab content Here ===============  */
 .tab-contents {
@@ -955,7 +985,7 @@ footer .company {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--fs-lg);
+    font-size: clamp(14px, 1.05vw, 18px);
     transition: .2s ease;
     box-shadow: var(--n-shadow-1);
     z-index: 2;
@@ -971,8 +1001,26 @@ footer .company {
 
 
 
+/* info modal */
+.info-modal .item {
+    background-color: var(--my-white);
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    border-radius: var(--radius-md);
+}
 
+.info-modal .item .key {
+    font-weight: 500;
+    color: var(--my-text-primary);
+    font-size: clamp(13px, 1.05vw, 14px);
+}
 
+.info-modal .item .value {
+    color: var(--text-quaternary);
+    font-size: clamp(13px, 1.05vw, 14px);
+    font-weight: 400;
+}
 
 
 
@@ -1133,6 +1181,34 @@ footer .company {
 
     .view .card .item .value {
         font-weight: 500;
+        font-size: var(--fs-xs);
+    }
+
+    .order-lines .item {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .my-input-control label {
+        font-weight: 600;
+    }
+
+    .discount-btn {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+
+    select {
+        font-size: 13px;
+    }
+
+    /* info modal */
+    .info-modal .item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .info-modal .item .value {
         font-size: var(--fs-xs);
     }
 }

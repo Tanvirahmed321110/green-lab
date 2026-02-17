@@ -18,9 +18,13 @@
         <!--=========================================-->
         <header>
             <div class="header-wrapper my-container my-flex-between">
+
+                <!-- Portal Name -->
                 <a href="">
                     <h1 class="left my-fs-xxl my-text-white" style="font-size: 28px;">Green Lab.</h1>
                 </a>
+
+                <!-- Right -->
                 <div class="right">
                     <div class="user-img">
                         <img src="https://lh3.googleusercontent.com/-owKu1iCCv1U/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfkkoF57nnKwpNOdtH-5uYsJd1iv1fQ/photo.jpg?sz=46"
@@ -32,6 +36,8 @@
                                 <!-- name -->
                                 <div class="my-flex-column my-gap-1">
                                     <span class="my-text-gray">Hi,</span>
+
+                                    <!-- user name -->
                                     <span class="name">Tanvir Ahmed</span>
                                 </div>
 
@@ -198,6 +204,12 @@
                                                         <!-- Status -->
                                                         <td>
                                                             <div class="quatation status">quatation</div>
+
+                                                            <!-- all status here -->
+                                                            <!-- <div class="asm-dsm status">ASM/DSM</div>
+                                                            <div class="manager status">Manager</div>
+                                                            <div class="account status">Account</div>
+                                                            <div class="sale-order status">sale order</div> -->
                                                         </td>
 
                                                         <!-- View Button -->
@@ -862,7 +874,7 @@
                                                 <!--============  Modal Body Here  ============-->
                                                 <div class="modal-body">
                                                     <div class="my-flex-column my-gap-12">
-                                                        <div class="my-grid-2 my-gap-12 my-grid-sm-1 my-gap-sm-8">
+                                                        <div class="my-grid-2 my-gap-12 my-grid-sm-2 my-gap-sm-6">
 
                                                             <!-- for name -->
                                                             <div class="my-input-control">
@@ -1009,16 +1021,28 @@
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <!-- Total  -->
+                                                                                <h5 class="my-text-primary">Total
+                                                                                </h5>
+                                                                            </td>
+                                                                            <td>
+                                                                                <h4 class="my-text-primary">1200 <span>
+                                                                                        ৳</span>
+                                                                                </h4>
+                                                                            </td>
+                                                                            <td></td>
+                                                                        </tr>
                                                                     </tbody>
                                                                 </table>
 
-                                                                <!-- Total  -->
-                                                                <div class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-6"
-                                                                    style="border-top:1px solid #777">
-                                                                    <h5 class="my-text-primary">Total</h5>
-                                                                    <h4 class="my-text-primary">1200 <span> ৳</span>
-                                                                    </h4>
-                                                                </div>
+
                                                             </div>
                                                         </div>
 
@@ -1031,7 +1055,8 @@
 
                                                     <!-- modal cancel button -->
                                                     <button
-                                                        class="my-bg-red my-btn my-text-white my-danger-btn">Cancel</button>
+                                                        class="my-bg-red my-btn my-text-white my-danger-btn modal-close-btn"
+                                                        type="button">Cancel</button>
 
                                                     <!-- submit button -->
                                                     <button class="my-btn my-primary-btn submit-btn">
@@ -1789,7 +1814,7 @@
                                                 <!--============  Modal Body Here  ============-->
                                                 <div class="modal-body">
                                                     <div class="my-flex-column my-gap-12">
-                                                        <div class="my-grid-2 my-gap-12  my-gap-sm-8">
+                                                        <div class="my-grid-2 my-gap-12  my-gap-sm-6">
 
                                                             <!-- for name -->
                                                             <div class="my-input-control">
@@ -1899,13 +1924,43 @@
                                                                     </tbody>
                                                                 </table>
 
-                                                                <div class="my-d-flex my-align-center my-gap-8">
-                                                                    <button>Discount</button>
+                                                                <div
+                                                                    class="my-d-flex my-align-cener my-justify-end  my-gap-12 my-mt-4 my-mt-sm-12">
+
+                                                                    <!-- discount button -->
+                                                                    <button class="discount-btn" type="button">Discount
+                                                                        <i
+                                                                            class="ri-discount-percent-line"></i></button>
                                                                     <!-- Total  -->
-                                                                    <div class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-6"
-                                                                        style="border-top:1px solid #777">
-                                                                        <h5 class="my-text-primary">Total</h5>
-                                                                        <h4 class="my-text-primary">1200 <span> ৳</span>
+                                                                    <div
+                                                                        class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-6">
+                                                                        <div class="my-text-primary">Total</div>
+                                                                        <h5 class="my-text-primary">1200 <span> ৳</span>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="my-d-flex my-align-end my-justify-end">
+                                                                    <div
+                                                                        class="discount-item my-d-flex my-align-end my-gap-4">
+                                                                        <input type="text" placeholder="Fixed">
+                                                                        <input type="text" placeholder="%">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div>
+                                                                    <!-- Discount   -->
+                                                                    <div
+                                                                        class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-4">
+                                                                        <div class="my-text-primary">Discount </div>
+                                                                        <div class="my-text-primary">120 <span> ৳</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Discount   -->
+                                                                    <div class="my-d-flex my-align-end my-justify-end my-gap-24 my-pt-3 my-mt-4"
+                                                                        style="border-top: 1px solid #777;">
+                                                                        <h5 class="my-text-primary">Final Total </h5>
+                                                                        <h4 class="my-text-primary">1080 <span> ৳</span>
                                                                         </h4>
                                                                     </div>
                                                                 </div>
@@ -1921,7 +1976,8 @@
 
                                                     <!-- modal cancel button -->
                                                     <button
-                                                        class="my-bg-red my-btn my-text-white my-danger-btn">Cancel</button>
+                                                        class="my-bg-red my-btn my-text-white my-danger-btn modal-close-btn"
+                                                        type="button">Cancel</button>
 
                                                     <!-- submit button -->
                                                     <button class="my-btn my-primary-btn submit-btn">
@@ -2594,7 +2650,7 @@
                                                 <!--============  Modal Body Here  ============-->
                                                 <div class="modal-body">
                                                     <div class="my-flex-column my-gap-12">
-                                                        <div class="my-grid-2 my-gap-12  my-gap-sm-8">
+                                                        <div class="my-grid-2 my-gap-12  my-gap-sm-6">
 
                                                             <!-- for name -->
                                                             <div class="my-input-control">
@@ -2641,7 +2697,8 @@
 
                                                     <!-- modal cancel button -->
                                                     <button
-                                                        class="my-bg-red my-btn my-text-white my-danger-btn">Cancel</button>
+                                                        class="my-bg-red my-btn my-text-white my-danger-btn modal-close-btn"
+                                                        type="button">Cancel</button>
 
                                                     <!-- submit button -->
                                                     <button class="my-btn my-primary-btn submit-btn">
@@ -2670,6 +2727,77 @@
 
         </main>
 
+
+
+
+
+
+        <!-- ==============================|| Information Modal ||================================== -->
+        <div class="info-modal modal show">
+            <div class="modal-content lg">
+
+                <!--============  Modal Header Here ============-->
+                <div class="modal-header">
+                    <h3 class="my-text-primary">View Information </h3>
+
+                    <!-- Close Button -->
+                    <button class="modal-close-btn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="close-icon">
+                            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+
+
+                <!--============  Modal Body Here  ============-->
+                <div class="modal-body">
+                    <div class="my-flex-column my-gap-12 ">
+                        <div class="my-grid-2 my-grid-sm-2 my-gap-sm-6 my-gap-10 items">
+                            <div class="item ">
+                                <div class="key">Order Number:</div>
+                                <div class="value">#12323</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Order Date:</div>
+                                <div class="value">2 Jan 2025</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Category:</div>
+                                <div class="value">Category one</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Product:</div>
+                                <div class="value">calbo</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Madicine Code:</div>
+                                <div class="value">FDH00</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">UOM:</div>
+                                <div class="value">-</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Quantity:</div>
+                                <div class="value">2 </div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Unit Price:</div>
+                                <div class="value">440</div>
+                            </div>
+                            <div class="item">
+                                <div class="key">Subtotal:</div>
+                                <div class="value">880</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
 
@@ -2721,21 +2849,6 @@
             });
 
 
-
-            // const tabContainer = document.querySelector('.tab-container')
-            // const createButtons = tabContainer.querySelectorAll('.create-btn')
-            // console.log(createButtons)
-
-            // createButtons.forEach(btn => {
-            //     btn.addEventListener('click', function (e) {
-            //         const modal = btn.closest('.tab-container').querySelector('.modal')
-
-            //         if (modal) {
-            //             modal.classList.add('show')
-            //         }
-            //     })
-            // })
-            // select all tab containers
             const tabContents = document.querySelectorAll('.tab-content');
 
             if (tabContents) {
@@ -2762,19 +2875,19 @@
             function closeModal() {
                 // select all modals
                 const modals = document.querySelectorAll('.modal');
-                if (!modals.length) return; //  return
+                if (!modals.length) return;
 
                 modals.forEach(modal => {
 
-                    const closeBtn = modal.querySelector('.modal-close-btn');
+                    const closeBtns = modal.querySelectorAll('.modal-close-btn'); // multiple buttons
                     const content = modal.querySelector('.modal-content');
 
-                    if (!content) return; // content nai, skip
+                    if (!content) return;
 
-                    // Close on X button
-                    if (closeBtn) {
-                        closeBtn.addEventListener('click', () => modal.classList.remove('show'));
-                    }
+                    // Close on each X button
+                    closeBtns.forEach(btn => {
+                        btn.addEventListener('click', () => modal.classList.remove('show'));
+                    });
 
                     // Close on click outside modal-content
                     modal.addEventListener('click', e => {
@@ -2785,11 +2898,13 @@
 
                     // Prevent modal-content click from closing
                     content.addEventListener('click', e => e.stopPropagation());
+
                 });
             }
 
             // Initialize
             closeModal();
+
 
 
 
@@ -2825,8 +2940,6 @@
                     });
                 });
             }
-
-
 
 
 
